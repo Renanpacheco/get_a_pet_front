@@ -2,7 +2,7 @@ import {Link} from 'react-router-dom'
 import Logo from "../../assets/logo.png"
 import styles from "./Navbar.module.css"
 
-function Home(){
+function Navbar(){
     return (
         <nav className={styles.navbar}>
             <div className={styles.navbar_logo}>
@@ -24,4 +24,4 @@ function Home(){
     )
 
 }
-export default Home
+export default Navbar

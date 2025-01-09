@@ -1,5 +1,5 @@
 import styles from './Footer.module.css'
-function Home(){
+function Footer(){
     return (
         <footer className={styles.footer}>
             <p><span className="bold">Get a Pet</span> &copy; 2024</p>
@@ -7,4 +7,4 @@ function Home(){
     )
 
 }
-export default Home
+export default Footer
