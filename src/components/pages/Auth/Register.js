@@ -1,9 +1,11 @@
 import Input from "../../form/Input.js"
+import styles from "../../form/Form.module.css"
+import { Link } from "react-router-dom"
 
 function Register(){
     function handlechange(e){}
     return (
-        <section>
+        <section className={styles.form_container}>
             <h1>Register</h1>
             <form>
                 <Input text="name" name="name" type="text" placeholder="Enter your name" handleOnchange={handlechange} />
@@ -13,6 +15,7 @@ function Register(){
                 <Input text="confirm password" name="confirmpassword" type="password" placeholder="confirm your password" handleOnchange={handlechange} />
                 <input type="submit" value="register" />
             </form>
+            <p>Already have a account? <Link to="/login">Click here</Link></p>
         </section>
     )
 
